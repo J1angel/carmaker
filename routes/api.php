@@ -30,4 +30,7 @@ Route::group([
     Route::post('refresh', [Controllers\AuthController::class, 'refresh']);
     Route::post('me', [Controllers\AuthController::class, 'me']);
 
+    Route::post('gettypes', [Controllers\TypeController::class, 'gettypes']);
+    Route::post('addtypes', [Controllers\TypeController::class, 'addtypes']);
+    Route::post('deletetypes', [Controllers\TypeController::class, 'deletetypes']);
 });
