@@ -31,7 +31,7 @@ class ManufacturerController extends Controller
         $manu->save();
 
         return response()->json([
-            'message' => 'Type successfully add.'
+            'message' => 'Manufacturer successfully added.'
         ]);
     }
 

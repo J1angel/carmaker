@@ -37,4 +37,8 @@ Route::group([
     Route::post('getmanufacturers', [Controllers\ManufacturerController::class, 'getmanufacturers']);
     Route::post('addmanufacturers', [Controllers\ManufacturerController::class, 'addmanufacturers']);
     Route::post('deletemanufacturers', [Controllers\ManufacturerController::class, 'deletemanufacturers']);
+
+    Route::post('getcolors', [Controllers\ColorController::class, 'getcolors']);
+    Route::post('addcolors', [Controllers\ColorController::class, 'addcolors']);
+    Route::post('deletecolors', [Controllers\ColorController::class, 'deletecolors']);
 });

@@ -32,7 +32,7 @@ class TypeController extends Controller
         $type->save();
 
         return response()->json([
-            'message' => 'Type successfully add.'
+            'message' => 'Type successfully added.'
         ]);
     }
 
