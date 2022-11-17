@@ -43,7 +43,7 @@ class TypeController extends Controller
         $a = Type::where('id', $request->id)->first();
         Type::where('id', $request->id)->delete();
         return response()->json([
-            'message' => 'Successfully deleted '.$a
+            'message' => 'Successfully deleted '.$a->name
         ]);
 
     }

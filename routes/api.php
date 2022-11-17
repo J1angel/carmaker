@@ -33,4 +33,8 @@ Route::group([
     Route::post('gettypes', [Controllers\TypeController::class, 'gettypes']);
     Route::post('addtypes', [Controllers\TypeController::class, 'addtypes']);
     Route::post('deletetypes', [Controllers\TypeController::class, 'deletetypes']);
+
+    Route::post('getmanufacturers', [Controllers\ManufacturerController::class, 'getmanufacturers']);
+    Route::post('addmanufacturers', [Controllers\ManufacturerController::class, 'addmanufacturers']);
+    Route::post('deletemanufacturers', [Controllers\ManufacturerController::class, 'deletemanufacturers']);
 });
