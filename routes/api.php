@@ -41,4 +41,11 @@ Route::group([
     Route::post('getcolors', [Controllers\ColorController::class, 'getcolors']);
     Route::post('addcolors', [Controllers\ColorController::class, 'addcolors']);
     Route::post('deletecolors', [Controllers\ColorController::class, 'deletecolors']);
+
+    Route::post('getcars', [Controllers\CarController::class, 'getcars']);
+    Route::post('addcars', [Controllers\CarController::class, 'addcars']);
+    Route::post('deletecars', [Controllers\CarController::class, 'deletecars']);
+
+    Route::post('optionscar', [Controllers\CarController::class, 'optionscar']);
+
 });

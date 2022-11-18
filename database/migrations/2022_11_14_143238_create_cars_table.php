@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('manufacturer');
             $table->integer('type');
+            $table->integer('color');
             $table->timestamps();
         });
     }
